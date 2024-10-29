@@ -20,7 +20,6 @@ import com.example.quotationaapp.data.model.QuotesData;
 import com.example.quotationaapp.data.utils.BaseResponse;
 import com.example.quotationaapp.databinding.ActivityHomeBinding;
 
-import com.example.quotationaapp.ui.favorite.FavoriteActivity;
 import com.example.quotationaapp.ui.home.model.HomeModelView;
 
 public class HomeActivity extends AppCompatActivity {
@@ -81,7 +80,6 @@ public class HomeActivity extends AppCompatActivity {
             } else {
                 binding.favoriteIconIV.setImageResource(R.drawable.filled_icons);
                 isFavorite = false;
-                startActivity(new Intent(HomeActivity.this, FavoriteActivity.class));
             }
 
         });
